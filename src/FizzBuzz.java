@@ -18,7 +18,7 @@ public class FizzBuzz {
 		} else if (i % 5 == 0) {
 			return "Buzz";
 		} else {
-//				Czy mo¿na tutaj zastosowaæ zapis i + ""
+//				Czy moï¿½na tutaj zastosowaï¿½ zapis i + ""
 			return Integer.valueOf(i).toString();
 		}		
 	}
