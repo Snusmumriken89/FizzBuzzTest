@@ -18,8 +18,14 @@ public class FizzBuzz {
 		} else if (i % 5 == 0) {
 			return "Buzz";
 		} else {
-//				Czy mo�na tutaj zastosowa� zapis i + ""
-			return Integer.valueOf(i).toString();
-		}		
+			return String.valueOf(i);
+		}
+	}
+	
+//	Tutaj napisałem jeszcze krótszą wersję z ternariuszami. Wydaje mi się że moze być szybszaponieważ jest mniej dzielenia
+	public static String fizzBuzz2(int i){
+		String fizz = (i % 3 == 0)?"Fizz":"";
+		String buzz = (i % 5 == 0)?"Buzz":"";
+		return ((fizz + buzz).isEmpty())?String.valueOf(i):(fizz + buzz);	
 	}
 }
